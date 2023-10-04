@@ -9,6 +9,12 @@ I am working with a dataset that examines plant growth in relation to various fa
 
 To solve this, I am utilizing the [`DHARMa`](https://cran.r-project.org/web/packages/DHARMa/index.html) package along with [`lme4`](https://cran.r-project.org/web/packages/lme4/index.html) for model fitting.
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(warning = FALSE, error = F, cache = T, message = F)
+```
+
+
+
 ```{r}
 library(DHARMa)
 library(lme4)
@@ -20,10 +26,10 @@ library(sp)
 ```
 
 
-You can find the dataset for this model in this [GitHub repository](link_to_repo).
+You can find the dataset for this model in this [GitHub repository](https://github.com/derek-corcoran-barrios/SeaIceQuestion).
 
 ```{r}
-FinalDataset <- read.csv("FinalDataset.csv")
+FinalDataset <- read.csv("https://raw.githubusercontent.com/derek-corcoran-barrios/SeaIceQuestion/master/FinalDataset.csv")
 ```
 
 
